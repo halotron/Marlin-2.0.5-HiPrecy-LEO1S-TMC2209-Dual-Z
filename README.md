@@ -20,3 +20,11 @@ This repository fix some of the problems from the [original HiPrecy](https://git
 * Bed Induction Probe
 
 ! Please note that the process is tested only with Arduino (<v2).
+
+## Further info on building
+
+Since F6_14 was a PR that never were merged to platformio, it seems that this will currently only be possible to build in arduino IDE. The current latest versuin 2.3.2 worked for me.
+You need to install the TMCStepper library in the arduino ide to be able to compile.
+You open the Marlin.ino file in the Marlin directory in arduino IDE.
+
+# As the stock Hiprecy Leo 1s does not have endstops, this branch will try to remedy that with software endstops.
