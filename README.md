@@ -20,3 +20,5 @@ This repository fix some of the problems from the [original HiPrecy](https://git
 * Bed Induction Probe
 
 ! Please note that the process is tested only with Arduino (<v2).
+
+# See the noendstops branch for a marlin 2 for an unmodified Hiprecy Leo 1S
