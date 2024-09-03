@@ -27,4 +27,9 @@ Since F6_14 was a PR that never were merged to platformio, it seems that this wi
 You need to install the TMCStepper library in the arduino ide to be able to compile.
 You open the Marlin.ino file in the Marlin directory in arduino IDE.
 
-# As the stock Hiprecy Leo 1s does not have endstops, this branch will try to remedy that with software endstops.
+This driver is for a stock Hiprecy Leo 1s having 2 z axis.
+
+# As the stock Hiprecy Leo 1s does not have endstops, this version will instead rely on sensorless homing.
+
+Arduino IDE 1.x works. Version 2+ does not work. Compilation problem.
+
