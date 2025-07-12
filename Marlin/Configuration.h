@@ -681,7 +681,7 @@
 #define X_DRIVER_TYPE  TMC2209
 #define Y_DRIVER_TYPE  TMC2209
 #define Z_DRIVER_TYPE  TMC2209
-#define Z2_DRIVER_TYPE TMC2209
+//#define Z2_DRIVER_TYPE TMC2209
 #define E0_DRIVER_TYPE TMC2209
 //#define E1_DRIVER_TYPE TMC2130
 //#define E2_DRIVER_TYPE TMC2130
@@ -729,14 +729,14 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 100, 150 }  
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 415 }  
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 8, 150 }
+#define DEFAULT_MAX_FEEDRATE          { 300, 300, 8, 100 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -1091,8 +1091,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 230
-#define Y_BED_SIZE 220
+#define X_BED_SIZE 240
+#define Y_BED_SIZE 240
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
