@@ -451,7 +451,7 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 240
+#define HEATER_0_MAXTEMP 310
 //#define HEATER_1_MAXTEMP 275
 //#define HEATER_2_MAXTEMP 275
 //#define HEATER_3_MAXTEMP 275
@@ -566,7 +566,7 @@
  * *** IT IS HIGHLY RECOMMENDED TO LEAVE THIS OPTION ENABLED! ***
  */
 #define PREVENT_COLD_EXTRUSION
-#define EXTRUDE_MINTEMP 190
+#define EXTRUDE_MINTEMP 170
 
 /**
  * Prevent a single extrusion longer than EXTRUDE_MAXLENGTH.
@@ -1091,8 +1091,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 240
-#define Y_BED_SIZE 240
+#define X_BED_SIZE 230
+#define Y_BED_SIZE 230
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
